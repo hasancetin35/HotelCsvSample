@@ -1,0 +1,36 @@
+﻿@model List<HotelCsvSample.Models.ResponseModel>
+
+<p> Listeleme</p>
+
+
+<table>
+    <tr>   
+
+        <th> Hotel Name </th>
+        <th> Contact </th>
+        <th> Adress </th>
+        <th> Phone </th>
+        <th>Stars  </th>
+        <th>Url  </th>
+    </tr>
+
+
+    @foreach(var hotel in Model)
+    {
+<tr>
+    <td> @hotel.Name  </td>
+     <td> @hotel.Contact  </td>
+      <td> @hotel.Adress  </td>
+       <td> @hotel.Phone  </td>
+        <td> @hotel.Stars  </td>
+          <td> @hotel.Uri  </td>
+
+
+
+</tr>
+
+
+
+    }
+
+</table>
